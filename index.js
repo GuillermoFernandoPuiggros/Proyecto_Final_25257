@@ -1,12 +1,9 @@
-import express from "express";
+import "dotenv/config";
+import app from "./src/app.js";
 
-const app = express();
+// Obtener el puerto desde las variables de entorno
+const PORT = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
-  res.send("¡Hola, mundo!");
-});
-
-const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });

@@ -1,0 +1,5 @@
+{
+    "CodeGPT.apiKey": "LM Studio",
+    "editor.defaultFormatter": "GitHub.copilot-chat",
+    "editor.defaultFoldingRangeProvider": "GitHub.copilot-chat"
+}
