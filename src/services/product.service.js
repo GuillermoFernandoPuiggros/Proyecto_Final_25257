@@ -8,8 +8,10 @@ import {
 
 export const getAllProductsService = async () => {
   try {
-    return await getAllProductsModel();
+    const products = await getAllProductsModel();
+    return products;
   } catch (error) {
+    console.error("Service getAllProductsService:", error);
     throw new Error(`Error al obtener los productos: ${error.message}`);
   }
 };
